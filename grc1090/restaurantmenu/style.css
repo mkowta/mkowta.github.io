@@ -1,5 +1,123 @@
+/*CSS document*/
+/* Reset (minimal) */
 html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;} 
 img {
     	width: 100%;
     	display: block;
+}
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+/* Images */
+img {
+    width: 100%;
+    display: block;
+}
+
+/* Page base */
+body {
+    background-color: #f7f5f2; /* Not totally white. */
+    color: #222222;            /* Not totally black. */
+    line-height: 140%;
+    font-family: serif;
+}
+
+/* Main title */
+h1 {
+    background-color: #222222;
+    color: #f7f5f2; /* Same as body background. */
+    font-size: 2rem;
+    padding: 0.75rem 0.5rem 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Subtitle */
+h2 {
+    background-color: #e9e6e2;
+    color: #333333;
+    font-size: 1rem;
+    padding: 0.4rem 0.5rem;
+    font-family: serif;
+    font-weight: 400;
+}
+
+/* Section headings */
+h3 {
+    margin: 1rem 0 0.5rem;
+    padding-top: 0.5rem;
+    font-size: 1.05rem;
+    color: #111111;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-top: 1px solid #ddd;
+}
+
+/* Item name */
+h4 {
+    font-weight: 700;
+}
+
+/* Description and price */
+p.description {
+    font-style: italic;
+}
+
+p.price {
+    color: #8B0000;
+}
+
+/* Lists */
+ul {
+    margin: 0 0 1.5rem;
+}
+
+li {
+    margin: 0 0.75rem;
+    list-style-type: none;
+}
+
+/* Layout helpers for a narrow menu look */
+.menu {
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.menu-header {
+    text-align: center;
+    margin-bottom: 0.75rem;
+}
+
+.item-name {
+    margin-bottom: 0.2rem;
+}
+
+.description {
+    color: #444444;
+    margin-bottom: 0.25rem;
+}
+
+.price {
+    font-weight: 600;
+}
+
+/* Small-screen tuning */
+@media (max-width: 480px) {
+    body {
+        padding: 0.6rem;
+    }
+    .menu {
+        padding: 0 0.25rem;
+    }
+    h1 {
+        font-size: 1.6rem;
+    }
 }
