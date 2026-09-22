@@ -76,3 +76,89 @@
    </body>
     
 </html>
+/*CSS DOCUMENT*/
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;} /*My edited version of the Eric Meyer’s reset tool. You may want to include this in all of your future CSS files. */
+
+img {
+    width: 100%; /*Please leave this line.*/
+     display: block;
+}
+header {
+    background-color:#FE8800 ;
+    
+}
+footer {
+    background-color: #FE8800;
+    margin-top: 1.5em;
+}
+h1 {
+    font-family:Sutro, serif ;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.2em;
+    color: #FAFAFA;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    
+}
+h2 {
+    font-family: Sutro, serif;  
+    font-weight: 300;  
+    font-style: normal;
+    font-size: 1.5em;
+    color: #FFDDBB;
+    padding-left: 1.3em;
+    padding-top: .5em;
+    padding-bottom: 1em;
+}
+h3 {
+    font-family: Sutro, serif;  
+    font-weight: 300;  
+    font-style: normal;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    color: #FE8800;
+    padding-left: .75em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    letter-spacing: .1em;
+    
+    
+}
+p{
+    color:#EEEEEE ;
+    font-family: poppins, sans-serif;  
+    font-weight: 400;  
+    font-style: normal;
+    font-size: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1.5em;
+
+}
+ul {
+    list-style-type: disc;
+    padding-left: 2em;
+}
+ol {
+    list-style-type: decimal;
+    padding-left: 2em;
+}
+li{
+    font-family: poppins, sans-serif;  
+    font-weight: 400;  
+    font-style: normal;
+    font-size: 1em;
+    padding-bottom: 1em;
+}
+figcaption{
+     font-family: poppins, sans-serif;  
+    font-weight: 400;  
+    font-style: italic;
+    font-size: 1em;
+    margin: 1em;
+}
+/
