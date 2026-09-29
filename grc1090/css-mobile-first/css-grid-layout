@@ -74,7 +74,7 @@ li{
     font-size: 1em;
     padding-bottom: 1em;
 }
-figcaption{
+caption{
      font-family: poppins, sans-serif;  
     font-weight: 400;  
     font-style: italic;
@@ -82,12 +82,6 @@ figcaption{
     margin: 1em;
 }
 
-/* ============================================================
-   ADDITIONS BELOW — nothing above this line was changed.
-   These only add the layout your target picture needs:
-   a centered page, photo + caption side-by-side, and
-   ingredients/directions in two columns.
-   ============================================================ */
 
 body {
     background-color: #E7E7E7;
@@ -108,7 +102,7 @@ figure img {
     width: 68%;
 }
 
-figcaption {
+caption {
     width: 32%;
     display: flex;
     align-items: center;
