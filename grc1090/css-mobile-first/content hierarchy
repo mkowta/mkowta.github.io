@@ -1,0 +1,229 @@
+/*CSS DOCUMENT*/
+
+img {
+    width: 100%; 
+	display: block;
+}
+
+/*Please don’t change this CSS stylesheet for the content hierarchy assginment */
+  <!doctype html>  
+    <html lang="en">  
+        <head>  
+            <meta charset="UTF-8">  
+            <meta name="viewport" content="width=device-width, initial-scale=1">  
+            <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />  
+            <meta http-equiv="Pragma" content="no-cache" />  
+            <meta http-equiv="Expires" content="0" />  
+            <title>Untitled Document</title>  
+        </head>   
+        <body>  
+        </body>  
+    </html>
+    You have four pages of content below. After each line of asterisks, you have the content for one page. The line of asterisk is not part of the content. This paragraph is not part of the content either, it’s just instructions. 
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+Bakes as cute as you.
+
+123 Happy Ave, San Luis Obispo, California
+
+805-756-1108
+
+© All rights reserved. The Restaurant, 2025.
+
+
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+
+About us
+
+<img src="https://th.bing.com/th/id/OIP.QEWM6Boy9Z_smvz9ApZdVgHaHa?w=158&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="Cutie Pie Bakery">
+
+Cutie Pie is a small bakery located in San Luis Obispo, California. We specialize in making delicious baked goods that are as cute as they are tasty. Our team of skilled bakers uses only the finest ingredients to create treats that will delight your taste buds and bring a smile to your face.
+
+Don't just come for the goods, come for the experience. Our bakery is a cozy and welcoming space where you can relax and enjoy your treats with friends and family. We also offer custom orders for special occasions, so you can make your celebrations even sweeter.
+
+Started in 2010. We continue to grow and expand our offerings, but we remain committed to our original mission of creating cute and delicious baked goods that bring joy to our customers. Thank you for supporting our small business, and we look forward to serving you soon!
+
+Come visit us for a delightful experience.
+
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+
+Menu
+
+Cookies
+
+<img src="https://th.bing.com/th/id/OIP.wNvIK5MIVNcZfD-Ygp2DgAHaE8?w=241&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="Chocolate Chip Cookies">
+
+Chocolate Chip Cookies
+
+Gooey, chewy chocolate chip cookies made with the finest ingredients and baked to perfection.
+
+$6.00
+
+Double chocolate cookies
+
+Rich chocolate cookies with chocolate chips, perfect for chocolate lovers.
+
+$6.00
+
+M&M Cookies
+
+Sugar cookies with M&M's baked in, perfect for a fun and colorful treat.
+
+$6.00
+
+Sugar Cookies
+
+Regular soft, and chewy sugar cookies, perfect for any occasion.
+
+$6.00
+
+Raspberry Lemon Cookies
+
+The perfect combination of sweet and tart, these cookies are made with fresh raspberries and a hint of lemon zest.
+
+$7.00
+
+Snickerdoodle Cookies
+
+A classic sugar cookie, rolled in cinnamon and sugar to create a soft and chewy treat with a warm, comforting flavor.
+
+$6.00
+
+Pastries 
+
+<img src="https://images.stockcake.com/public/b/8/b/b8bca4f2-33d0-40cb-a267-d57d747713cc_large/assorted-breakfast-pastries-stockcake.jpg" alt="Assorted Breakfast Pastries">
+
+Croissant
+
+Crispy, flaky, buttery pastry that is perfect for breakfast or a snack.
+$7.00
+
+Chocolate Croissant
+
+Buttery, chocolate-filled, and flaky pastry baked to a golden brown perfection.
+
+$8.00
+
+Cinnamon Roll
+
+Fluffy, soft, and sweet pastry with a warm cinnamon filling, topped with a sweet glaze.
+
+$10.00
+
+Fruit Tart
+
+Flaky pastry crust with a creamy custard filling, topped with fresh fruit and a sweet glaze.
+
+$12.00
+
+Lemon Meringue Tart
+
+Sweet and tangy lemon filling topped with a light and fluffy meringue, all nestled in a buttery tart crust.
+
+$12.00
+
+Sausage Roll
+
+Juicy sausage wrapped in a flaky pastry, perfect for a quick savory snack or meal.
+
+$10.00
+
+Drinks
+
+<img src="https://cdn.happeningnext.com/events4/banners/ef74ae8a5533ce5a49485490fef5abb57db405cc9483ba0bd680342ee2da0deb-rimg-w1200-h1600-dcfde8cb-gmir.jpg?v=1764983849" alt="Drinks">
+
+Coffee
+
+Roasted coffee beans brewed to perfection, perfect for a morning pick-me-up or an afternoon boost.
+
+$9.00
+
+Green Tea
+
+Earthy and refreshing tea made from high-quality green tea leaves, perfect for a calming and soothing drink.
+
+$9.00
+
+Iced Tea
+
+Steeped tea served over ice, perfect for a refreshing and cooling drink on a hot day.
+
+$9.00
+
+Hot Chocolate
+
+Deep rich chocolate drink made with high-quality cocoa powder and steamed milk, perfect for a cozy and indulgent treat.
+
+$9.00
+
+Lemonade
+
+Freshly squeezed lemons, water, and sugar, served over ice for a refreshing and tangy and refreshing drink.
+
+$7.00
+
+Matcha
+
+Creamy and frothy Japanese green tea, made with high-quality matcha powder and steamed milk, perfect for a refreshing and energizing drink.
+
+$9.00
+
+Merchandise
+
+<img src="https://a.storyblok.com/f/165154/1280x720/a9c3cc90ed/01_what-merchandise-marketing-guide.jpg/m/" alt="Merchandise">
+
+T-Shirt
+
+A T-shirt made from soft, comfortable fabric, perfect for casual wear or as a gift for a loved one.
+
+$16.00
+
+Crewneck Sweatshirt
+
+A cozy crewneck, perfect for layering or lounging around the house. Made from soft, warm fabric, this sweatshirt is a must-have for any casual wardrobe.
+
+$21.00
+
+Hoodie
+
+A warm and cozy hoodie, perfect for chilly days or casual wear. Made from soft, durable fabric, this hoodie is a great addition to any wardrobe.
+
+$23.00
+
+Coffee Mug
+
+The perfect gift for any coffee or tea lover, this mug is made from high-quality ceramic and features a cute design that will brighten up your morning routine.
+
+$13.00
+
+Water bottle 
+
+A durable water bottle, perfect for staying hydrated throughout the day. Made from high-quality materials, this bottle is both functional and stylish.
+
+$15.00
+
+Baseball Cap
+
+A classic that can be the perfect accessory for any casual outfit for both a casual and sporty look. 
+
+$12.00
+
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+
+<img src="https://static.vecteezy.com/system/resources/previews/017/063/603/non_2x/you-are-here-map-digital-free-vector.jpg" alt="You Are Here Map">
+
+123 Happy Ave, San Luis Obispo, California
+
+805-756-1108
+
+Hours
+
+Tuesday–Friday: 7:00am–10:00pm
+
+Saturday–Sunday: 8:00am–10:00pm
+
+Closed on Mondays
+C:\Users\Miya\AppData\Local\Temp\7e5cb93f-0b59-48e2-b2da-ef6b64e9cee0_grc338-content-hierarchy-initial-files.zip.ee0\GRC 338 Website content hierarchy initial files\placeholder.jpg
