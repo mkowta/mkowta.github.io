@@ -1,0 +1,66 @@
+html, body, h1, h2, h3, h4, p, ul, li {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+ 
+body {
+	background-color: #f7f6f4; /* Not totally white. */
+	color: #262524;  /* Not totally black. */
+	line-height: 140%; 	/* A little extra leading. */
+	font-family: Georgia, "Times New Roman", serif;
+}
+ 
+h1 {
+	background-color: #918f93;
+	color: #f7f6f4; /* Same as body background. */
+	font-size: 2.75em;
+	padding: 30px 30px 5px; /* three values */
+	font-weight: bold;
+	text-transform: uppercase;
+}
+ 
+ 
+h2 {
+	background-color: #918f93;
+	color: #f7f6f4;
+	font-size: 1.6em;
+	padding: 5px 30px 30px;
+	font-family: Georgia, "Times New Roman", serif;
+	font-weight: bold;
+}
+ 
+h3 {
+	margin: 40px 30px 20px; /* three values */
+	padding-top: 15px;
+	font-size: 1.4em;
+	color: #a13a2f;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.1em; /* extra tracking for bold uppercase */
+	border-top: 3px solid #a13a2f;
+}
+ 
+h4 {
+	font-weight: bold;
+}
+ 
+p.description {
+	font-style: italic;
+}
+ 
+p.price {
+	color: #a13a2f;
+}
+ 
+ul {
+	margin: 0 0 30px;
+}
+ 
+li { 
+	margin: 0 30px 25px;
+	list-style-type: none;
+}
