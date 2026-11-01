@@ -1,17 +1,53 @@
-img {
-    width: 100%; /
-     display: block;
+* {
+    box-sizing: border-box;
 }
+
+body {
+    margin: 0;
+    background-color: #2B2B2B;
+    color: #EEEEEE;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "header header"
+        "figure main"
+        "footer footer";
+    gap: 1.5em;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
 header {
-    background-color:#FE8800 ;
-    
+    grid-area: header;
+    background-color: #FE8800;
+}
+figure {
+    grid-area: figure;
+    margin: 0;
+}
+main {
+    grid-area: main;
+    border-left: 2px solid #FE8800;
 }
 footer {
+    grid-area: footer;
     background-color: #FE8800;
-    margin-top: 1.5em;
+}
+
+.ingredients {
+    border-bottom: 1px solid #FE8800;
+    padding-bottom: 1em;
+}
+
+img {
+    width: 100%;
+    display: block;
 }
 h1 {
-    font-family:Sutro, serif ;
+    font-family: Sutro, serif;
     font-weight: 700;
     font-style: normal;
     font-size: 2.2em;
@@ -19,21 +55,22 @@ h1 {
     padding-top: 1em;
     padding-left: 1em;
     padding-right: 1em;
-    
+    margin: 0;
 }
 h2 {
-    font-family: Sutro, serif;  
-    font-weight: 300;  
+    font-family: Sutro, serif;
+    font-weight: 300;
     font-style: normal;
     font-size: 1.5em;
     color: #FFDDBB;
     padding-left: 1.3em;
     padding-top: .5em;
     padding-bottom: 1em;
+    margin: 0;
 }
 h3 {
-    font-family: Sutro, serif;  
-    font-weight: 300;  
+    font-family: Sutro, serif;
+    font-weight: 300;
     font-style: normal;
     font-size: 1.3em;
     text-transform: uppercase;
@@ -42,40 +79,56 @@ h3 {
     padding-bottom: 1em;
     padding-top: 1em;
     letter-spacing: .1em;
-    
-    
+    margin: 0;
 }
-p{
-    color:#EEEEEE ;
-    font-family: poppins, sans-serif;  
-    font-weight: 400;  
+p {
+    color: #EEEEEE;
+    font-family: poppins, sans-serif;
+    font-weight: 400;
     font-style: normal;
     font-size: 1em;
     padding-right: 1em;
     padding-top: 1em;
     padding-bottom: 1em;
     padding-left: 1.5em;
-
+    margin: 0;
 }
 ul {
     list-style-type: disc;
     padding-left: 2em;
+    margin: 0;
 }
 ol {
     list-style-type: decimal;
     padding-left: 2em;
+    margin: 0;
 }
-li{
-    font-family: poppins, sans-serif;  
-    font-weight: 400;  
+li {
+    font-family: poppins, sans-serif;
+    font-weight: 400;
     font-style: normal;
     font-size: 1em;
     padding-bottom: 1em;
 }
-figcaption{
-     font-family: poppins, sans-serif;  
-    font-weight: 400;  
+figcaption {
+    font-family: poppins, sans-serif;
+    font-weight: 400;
     font-style: italic;
     font-size: 1em;
     margin: 1em;
+}
+
+@media (max-width: 700px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "figure"
+            "main"
+            "footer";
+    }
+    main {
+        border-left: none;
+        border-top: 2px solid #FE8800;
+    }
 }
