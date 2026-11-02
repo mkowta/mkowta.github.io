@@ -24,10 +24,12 @@ body {
 header {
     grid-area: header;
     background-color: #FE8800;
-}
 figure {
     grid-area: figure;
     margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
 }
 main {
     grid-area: main;
@@ -120,6 +122,10 @@ figcaption {
 }
 
 @media (min-width: 700px) {
+    figure {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5em;
+    }
     main {
         grid-template-columns: 1fr 1fr;
     }
