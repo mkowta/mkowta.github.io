@@ -4,8 +4,11 @@
 
 body {
     margin: 0;
-    background-color: #FFFFFF;
-    color: #222222;
+    padding: 10px 15px;
+    background-color: #DDDDDD;
+    font-family: "Times New Roman", Times, serif;
+    color: #000000;
+    line-height: 1.3;
 }
 
 .container {
@@ -16,120 +19,104 @@ body {
         "figure"
         "main"
         "footer";
-    gap: 1.5em;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
+    background-color: #FFFFFF;
 }
 
 header {
     grid-area: header;
-    background-color: #FE8800;
+    background-color: #FF8C00;
+    padding: 15px 18px;
+}
+
+h1 {
+    font-family: Sutro, Georgia, serif;
+    font-weight: 700;
+    font-size: 2em;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+h2 {
+    font-family: Sutro, Georgia, serif;
+    font-weight: 700;
+    font-size: 1.3em;
+    color: #FFFFFF;
+    margin: 0;
+}
+
 figure {
     grid-area: figure;
-    margin: 0;
+    margin: 0 0 40px 0;
     display: grid;
     grid-template-columns: 1fr;
-    align-items: center;
-}
-main {
-    grid-area: main;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5em;
-}
-footer {
-    grid-area: footer;
-    background-color: #FE8800;
+    align-items: start;
 }
 
 img {
     width: 100%;
     display: block;
 }
-h1 {
-    font-family: Sutro, serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 2.2em;
-    color: #FAFAFA;
-    padding-top: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
-    margin: 0;
-}
-h2 {
-    font-family: Sutro, serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 1.5em;
-    color: #FFDDBB;
-    padding-left: 1.3em;
-    padding-top: .5em;
-    padding-bottom: 1em;
-    margin: 0;
-}
-h3 {
-    font-family: Sutro, serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 1.3em;
-    text-transform: uppercase;
-    color: #FE8800;
-    padding-left: .75em;
-    padding-bottom: 1em;
-    padding-top: 1em;
-    letter-spacing: .1em;
-    margin: 0;
-}
-p {
-    color: #222222;
-    font-family: poppins, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1em;
-    padding-right: 1em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    padding-left: 1.5em;
-    margin: 0;
-}
-footer p {
-    color: #FAFAFA;
-}
-ul {
-    list-style-type: disc;
-    padding-left: 2em;
-    margin: 0;
-}
-ol {
-    list-style-type: decimal;
-    padding-left: 2em;
-    margin: 0;
-}
-li {
-    font-family: poppins, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1em;
-    padding-bottom: 1em;
-}
+
 figcaption {
-    font-family: poppins, sans-serif;
-    font-weight: 400;
-    font-style: italic;
     font-size: 1em;
-    margin: 1em;
+    font-style: normal;
+    padding: 15px;
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 0 18px;
+}
+
+.ingredients,
+.directions {
+    border-top: 2px solid #C8901A;
+    padding-top: 12px;
+}
+
+h3 {
+    font-family: Sutro, Georgia, serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: #C8901A;
+    margin: 0 0 20px 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding-left: 22px;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #FF8C00;
+    margin-top: 35px;
+    padding: 18px;
+}
+
+footer p {
+    margin: 0;
+    color: #FFFFFF;
 }
 
 @media (min-width: 700px) {
     figure {
-        grid-template-columns: 1fr 1fr;
-        gap: 1.5em;
+        grid-template-columns: 3fr 1fr;
     }
+
     main {
         grid-template-columns: 1fr 1fr;
-    }
-    .directions {
-        border-left: 2px solid #FE8800;
+        gap: 55px;
     }
 }
