@@ -9,39 +9,29 @@
         <link rel="stylesheet" href="style.css">
         <title>The Restaurant</title>
     </head>
-           <script>
-            document.querySelectorAll("nav a").forEach(function (link) {
-                link.addEventListener("click", function (event) {
-                    event.preventDefault();
-                    fetch(link.href)
-                        .then(function (response) { return response.text(); })
-                        .then(function (html) {
-                            var page = new DOMParser().parseFromString(html, "text/html");
-                            document.querySelector("main").replaceWith(page.querySelector("main"));
-                            document.title = page.title;
-                            document.querySelectorAll("nav a").forEach(function (a) {
-                                a.removeAttribute("aria-current");
-                            });
-                            link.setAttribute("aria-current", "page");
-                        })
-                        .catch(function () {
-                            window.location.href = link.href;
-                        });
-                });
-            });
-        </script>
     <body>
         <header>
-            <img src="logo.svg" alt="The Restaurant logo">
+            <h1><a href="index.html"><img src="logo.svg" alt="The Restaurant."></a></h1>
             <nav>
                 <ul>
-                    <li><a href="mkowta.github.io/grc1090/website-content-hierarchy
-/about.html
-">About</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="menu.html">Menu</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
 
-    
+        <main>
+            <p class="slogan">Every business has a nice slogan. Ours is coming soon.</p>
+            <address>
+                123 Happy Ave<br>
+                San Luis Obispo, California<br>
+                805-756-1108
+            </address>
+        </main>
+
+        <footer>
+            <p>&copy; All rights reserved. The Restaurant, 2025.</p>
+        </footer>
+    </body>
+</html>
