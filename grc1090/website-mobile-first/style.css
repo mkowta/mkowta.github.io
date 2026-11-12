@@ -99,10 +99,10 @@ p.description {
 p.price {
 	grid-row: 1;
 	grid-column: 2;
-	color: #FF8800;
+	color: #FF0000;
 	text-align: right;
 	margin: 0;
-	}
+}
 	
 nav ul li {
 	text-transform: uppercase;
