@@ -1,0 +1,261 @@
+/*CSS DOCUMENT*/
+
+@import url("https://fonts.googleapis.com/css2?family=Gelasio:ital@1&family=Inter:wght@400;700;800&display=swap");
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;} /*My edited version of the Eric Meyer’s reset tool. You may want to include this in all of your future CSS files. */
+
+
+/* ---------- Page frame (phone first) ---------- */
+
+html {
+	background: #FF0000;
+}
+
+body {
+	background: #FF0000;
+	font-family: "Inter", sans-serif;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+div.container,
+div.home-container {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 80em;
+	margin: 0 auto;
+	background: #FAFAFA;
+}
+
+div.home-container {
+	background: linear-gradient(160deg, #6C54E6 20%, #2F5A20 70%);
+}
+
+main {
+	flex: 1;
+	padding: 1em 1em 2em;
+}
+
+img {
+	width: 100%; /*Please leave this line.*/
+	display: block;
+}
+
+
+/* ---------- Header and navigation ---------- */
+
+header {
+	display: grid;
+	grid-template-columns: 8rem 1fr;
+	align-items: center;
+	background: #CCCCCC;
+	padding: 0.75em 1em 0.75em 0.5em;
+}
+
+h1 {
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	gap: 0.5rem;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+nav ul li {
+	text-transform: uppercase;
+	font-weight: 800;
+}
+
+nav ul li a {
+	display: block;
+	color: #FFFF00;
+	background-color: #0000FF;
+	padding: 0.45em 0.6em;
+	line-height: 1.1;
+}
+
+nav ul li a[aria-current="page"] {
+	color: #FFFFFF;
+	background-color: #FF8800;
+}
+
+
+/* ---------- Type ---------- */
+
+h2, h3, h4 {
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 1.8em;
+	margin: 0.5em 0 0.4em;
+}
+
+h3 {
+	font-size: 1.4em;
+	margin: 0.75em 0 0.5em;
+}
+
+p {
+	margin: 0 0 1em;
+}
+
+address {
+	color: #FF8800;
+}
+
+address p {
+	margin: 0;
+}
+
+
+/* ---------- Home ---------- */
+
+p.slogan {
+	font-family: "Gelasio", serif;
+	font-style: italic;
+	font-size: 2.2em;
+	line-height: 1.2;
+	color: #FFFFFF;
+	margin: 1em 0 2em;
+}
+
+
+/* ---------- Text blocks (about and contact) ---------- */
+
+main img {
+	margin-bottom: 1em;
+}
+
+section.copy {
+	max-width: 36em;
+	margin: 0 auto;
+	background: #00FFFF;
+}
+
+section.copy h2 {
+	margin: 0;
+}
+
+section.copy h3 {
+	margin: 1.25em 0 0.5em;
+}
+
+section.copy li {
+	margin-bottom: 1em;
+}
+
+main.about h2 {
+	position: absolute;
+	width: 1em;
+	height: 1em;
+	overflow: hidden;
+	clip-path: inset(50%);
+	white-space: nowrap;
+}
+
+
+/* ---------- Menu ---------- */
+
+main.menu section {
+	margin-bottom: 3.5em;
+}
+
+main.menu section img {
+	margin-bottom: 2em;
+}
+
+main.menu ul {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 2em;
+}
+
+main.menu ul li {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	grid-template-rows: auto auto;
+}
+
+main.menu p {
+	margin: 0;
+}
+
+p.description {
+	grid-column: 1 / 3;
+}
+
+p.price {
+	grid-row: 1;
+	grid-column: 2;
+	color: #FF0000;
+	text-align: right;
+}
+
+
+/* ---------- Footer ---------- */
+
+footer {
+	box-sizing: border-box;
+	min-height: 3rem;
+	padding: 0.75rem 0.5rem;
+	background: #FFFF00;
+}
+
+footer p {
+	margin: 0;
+}
+
+
+/* ---------- Larger screens ---------- */
+
+@media (min-width: 48em) {
+	main {
+		padding: 1em 2em 2em;
+	}
+
+	header {
+		grid-template-columns: 11rem 1fr;
+		padding: 2em 2.5em 2.3em 0.7em;
+	}
+
+	nav ul {
+		gap: 1.25rem;
+	}
+
+	nav ul li a {
+		font-size: 1.8em;
+		padding: 0.5em 0.6em;
+	}
+
+	h2 {
+		font-size: 2em;
+	}
+
+	h3 {
+		font-size: 1.5em;
+	}
+
+	p.slogan {
+		font-size: 3.5em;
+		margin: 1.5em 0 2.5em;
+	}
+
+	main.menu ul {
+		grid-template-columns: 1fr 1fr;
+		column-gap: 6em;
+	}
+}
