@@ -35,7 +35,7 @@ img {
 
 header {
 	display: grid;
-	grid-template-columns: 9rem 1fr;
+	grid-template-columns: 12rem 1fr;
 	align-items: start;
 	background: #C2C2C2;
 	padding: 0.5rem 0.3rem;
@@ -147,6 +147,10 @@ footer p {
 
 /* Larger screens (mobile first: the rules above are the phone version) */
 @media (min-width: 48em) {
+	header {
+		grid-template-columns: 18rem 1fr;
+	}
+
 	p.slogan {
 		font-size: 3.5em;
 	}
