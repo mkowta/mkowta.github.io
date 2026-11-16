@@ -1,0 +1,331 @@
+/*CSS DOCUMENT*/
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap");
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;} /*My edited version of the Eric Meyer’s reset tool. You may want to include this in all of your future CSS files. */
+
+
+/* ---------- Colors, fonts, spacing (change them here) ---------- */
+
+:root {
+	--font-heading: "Fraunces", serif;
+	--font-body: "Source Sans 3", sans-serif;
+	--accent: #A8541F;
+	--accent-dark: #86421A;
+	--ink: #222222;
+	--ink-soft: #4D4D4D;
+	--white: #FFFFFF;
+	--gray-page: #E6E6E6;
+	--gray-light: #F2F2F2;
+	--gray-mid: #CCCCCC;
+	--gray-dark: #333333;
+	--gutter: 1.25rem;
+}
+
+
+/* ---------- Page frame (phone first) ---------- */
+
+body {
+	background: var(--gray-page);
+	color: var(--ink);
+	font-family: var(--font-body);
+	line-height: 1.6;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+div.container,
+div.home-container {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 75em;
+	margin: 0 auto;
+	background: var(--white);
+}
+
+div.home-container {
+	background: linear-gradient(rgb(0 0 0 / 55%), rgb(0 0 0 / 55%)), url(home-background.jpg) center / cover no-repeat var(--gray-dark);
+}
+
+main {
+	flex: 1;
+	padding: 1.5rem var(--gutter) 2.5rem;
+}
+
+img {
+	width: 100%; /*Please leave this line.*/
+	display: block;
+}
+
+a:focus-visible {
+	outline: 0.2em solid var(--accent);
+	outline-offset: 0.15em;
+}
+
+
+/* ---------- Header and navigation ---------- */
+
+header {
+	display: grid;
+	gap: 0.5rem;
+	padding: 1rem var(--gutter) 0;
+	background: var(--gray-light);
+	border-bottom: 1px solid var(--gray-mid);
+}
+
+h1 {
+	width: 12rem;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+address a {
+	text-decoration: underline;
+}
+
+nav ul {
+	display: flex;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+nav ul li {
+	flex: 1;
+}
+
+nav ul li a {
+	display: block;
+	padding: 0.9em 0.5em;
+	border-bottom: 0.25em solid transparent;
+	color: var(--ink);
+	font-size: 0.95em;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+nav ul li a:hover {
+	color: var(--accent-dark);
+}
+
+nav ul li a[aria-current="page"] {
+	border-bottom-color: var(--accent);
+}
+
+
+/* ---------- Type ---------- */
+
+h2, h3 {
+	font-family: var(--font-heading);
+	font-weight: 700;
+	line-height: 1.15;
+}
+
+h2 {
+	font-size: 2em;
+	margin: 0 0 0.5em;
+}
+
+h3 {
+	font-size: 1.5em;
+	margin: 0 0 0.75em;
+}
+
+h4 {
+	font-size: 1.1em;
+	font-weight: 700;
+}
+
+p {
+	margin: 0 0 1em;
+}
+
+address {
+	font-style: normal;
+}
+
+address p {
+	margin: 0;
+}
+
+a.button {
+	display: inline-block;
+	padding: 0.9em 1.6em;
+	background: var(--accent);
+	color: var(--white);
+	font-weight: 700;
+	letter-spacing: 0.03em;
+}
+
+a.button:hover {
+	background: var(--accent-dark);
+}
+
+
+/* ---------- Home ---------- */
+
+div.home-container main {
+	padding-top: 3rem;
+	color: var(--white);
+}
+
+p.slogan {
+	max-width: 12em;
+	margin: 0 0 0.4em;
+	font-family: var(--font-heading);
+	font-size: 2.4em;
+	font-weight: 700;
+	line-height: 1.1;
+}
+
+p.intro {
+	max-width: 26em;
+	margin: 0 0 1.5em;
+	font-size: 1.25em;
+}
+
+div.home-container address {
+	margin-top: 2.5rem;
+	color: var(--gray-light);
+}
+
+
+/* ---------- Images and text blocks (about, menu, contact) ---------- */
+
+main img {
+	aspect-ratio: 16 / 9;
+	object-fit: cover;
+	margin-bottom: 1.5rem;
+}
+
+p.lead {
+	max-width: 30em;
+	color: var(--ink-soft);
+	font-size: 1.15em;
+}
+
+section.copy {
+	max-width: 38em;
+}
+
+section.copy h3 {
+	margin-top: 1.5em;
+}
+
+section.copy h3:first-child {
+	margin-top: 0;
+}
+
+section.copy li {
+	margin-bottom: 0.5em;
+}
+
+
+/* ---------- Menu ---------- */
+
+main.menu section {
+	margin-bottom: 3rem;
+}
+
+main.menu ul {
+	display: grid;
+	gap: 1rem 4rem;
+}
+
+main.menu ul li {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	align-content: start;
+	padding-bottom: 1rem;
+	border-bottom: 1px solid var(--gray-mid);
+}
+
+main.menu p {
+	margin: 0;
+}
+
+p.description {
+	grid-column: 1 / 3;
+	color: var(--ink-soft);
+}
+
+p.price {
+	grid-row: 1;
+	grid-column: 2;
+	color: var(--accent);
+	font-weight: 700;
+}
+
+
+/* ---------- Footer ---------- */
+
+footer {
+	padding: 1.25rem var(--gutter);
+	background: var(--gray-dark);
+	color: var(--gray-light);
+}
+
+footer p {
+	margin: 0;
+}
+
+
+/* ---------- Larger screens ---------- */
+
+@media (min-width: 48em) {
+	:root {
+		--gutter: 2.5rem;
+	}
+
+	header {
+		grid-template-columns: auto 1fr;
+		align-items: center;
+		padding-bottom: 1rem;
+	}
+
+	h1 {
+		width: 15rem;
+	}
+
+	nav ul {
+		justify-content: flex-end;
+		gap: 1rem;
+	}
+
+	nav ul li {
+		flex: none;
+	}
+
+	nav ul li a {
+		padding: 0.75em 1em;
+	}
+
+	main {
+		padding-top: 2.5rem;
+	}
+
+	div.home-container main {
+		padding-top: 5rem;
+	}
+
+	p.slogan {
+		font-size: 4.2em;
+	}
+
+	main img {
+		aspect-ratio: 21 / 8;
+	}
+
+	main.menu ul {
+		grid-template-columns: 1fr 1fr;
+	}
+}
