@@ -1,23 +1,16 @@
-/* The home page stretches across the whole window */
-div.home-container {
-	max-width: none;
-}
-
-/* keep the content lined up with the other pages on very wide screens */
-div.home-container header,
-div.home-container main,
-div.home-container footer {
-	padding-inline: max(var(--gutter), calc((100% - 75em) / 2 + var(--gutter)));
-}
-
-/* the photo slot: fills the whole dark area between the header and the footer */
+/* the photo slot: the picture fills the whole area between the header and the footer */
 div.home-container main {
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	background: var(--gray-dark);
-	color: var(--white);
+	background: var(--white);
+	color: var(--ink);
+}
+
+div.home-container main > * {
+	position: relative;
+	z-index: 1;
 }
 
 div.home-container main > img.backdrop {
@@ -32,26 +25,6 @@ div.home-container main > img.backdrop {
 	z-index: 0;
 }
 
-/* dark layer over the photo so the white text stays easy to read */
-div.home-container main::after {
-	content: "";
-	position: absolute;
-	inset: 0;
-	background: rgb(0 0 0 / 55%);
-	z-index: 1;
-}
-
-div.home-container main > * {
-	position: relative;
-	z-index: 2;
-}
-
-div.home-container main > img.backdrop {
-	position: absolute;
-	z-index: 0;
-}
-
 div.home-container address {
 	margin-top: 2.5rem;
-	color: var(--gray-light);
 }
